@@ -20,9 +20,11 @@ export async function loginHandler(
       .send("Invalid email or password");
   }
 
-  const payload = omit(user.toJSON(), ["password", "__v"]);
+  const payload = omit(user.toJSON(), "password");
 
-  const jwt = signJwt(payload);
+  const payload2 = omit(payload, "__v");
+
+  const jwt = signJwt(payload2);
 
   res.cookie("accessToken", jwt, {
     maxAge: 3.154e10, // 1 year

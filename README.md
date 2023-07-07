@@ -10,6 +10,10 @@
 
 This is a REST-API written in Typescript, using Express and MongoDB. It is the starting point for some of my projects. It can create users and authenticate them.
 
+## Authentication
+
+It uses a JWT token for authentication. The token is stored in a cookie and is valid for a year. The token is signed with a secret key, which is stored in the `.env` file. The secret key is used to verify the token when a user makes a request to a protected route.
+
 ## Dependencies
 
 | Name         | Version | Link                                               |
