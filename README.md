@@ -38,7 +38,11 @@ It uses a JWT token for authentication. The token is stored in a cookie and is v
 3. Create a `.env` file in the root directory and add the following variables:
 
 ```
-
+PORT=4000
+DB_URL=mongodb://localhost:27017/rest-api
+CORSE_ORIGIN=http://localhost:3000
+JWT_SECRET=your secret key
+EXPIRES_IN=7d
 ```
 
 4. Start the server with `npm run dev`
