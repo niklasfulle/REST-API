@@ -3,13 +3,15 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import { connect, disconnect } from "./utils/database";
 import logger from "./utils/logger";
-import { CORS_ORIGIN } from "./constants";
 import helmet from "helmet";
 import userRoute from "./modules/user/user.route";
 import authRoute from "./modules/auth/auth.route";
 import deserializeUser from "./middleware/deserializeUser";
+import * as dotenv from "dotenv";
+dotenv.config({ path: __dirname + '/.env' });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
+const CORS_ORIGIN = process.env.CORS_ORIGIN;
 
 const app = express();
 

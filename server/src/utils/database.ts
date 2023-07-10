@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
 import logger from "./logger";
+import * as dotenv from "dotenv";
+var path = __dirname.replace("utils", "");
+dotenv.config({ path: path + '.env' });
 
-const DB_URL = process.env.DB_URL || "mongodb://192.168.178.14:27017/rest-api";
+const DB_URL = process.env.DB_URL as string;
+
 
 export async function connect() {
   try {
