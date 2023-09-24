@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
--   [Description](#description)
--   [Dependencies](#dependencies)
--   [Installation](#installation)
+- [Description](#description)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
 
 ## Description
 
@@ -16,20 +16,28 @@ It uses a JWT token for authentication. The token is stored in a cookie and is v
 
 ## Dependencies
 
-| Name         | Version | Link                                               |
-| ------------ | ------- | -------------------------------------------------- |
-| Node.js      | 18.16.0 | [Link](https://nodejs.org/en/)                     |
-| MongoDB      | 4.4.6   | [Link](https://www.mongodb.com/)                   |
-| Typescript   | 4.4.3   | [Link](https://www.typescriptlang.org/)            |
-| Express      | 4.18.2  | [Link](https://expressjs.com/)                     |
-| Mongoose     | 7.3.2   | [Link](https://mongoosejs.com/)                    |
-| zod          | 3.21.4  | [Link](https://www.npmjs.com/package/zod)          |
-| cors         | 2.8.5   | [Link](https://www.npmjs.com/package/cors)         |
-| helmet       | 7.0.0   | [Link](https://www.npmjs.com/package/helmet)       |
-| argon2       | 0.30.3  | [Link](https://www.npmjs.com/package/argon2)       |
-| Jsonwebtoken | 9.0.1   | [Link](https://www.npmjs.com/package/jsonwebtoken) |
-| pino         | 6.12.0  | [Link](https://www.npmjs.com/package/pino)         |
-| Dotenv       | 16.3.1  | [Link](https://www.npmjs.com/package/dotenv)       |
+| name                    | version | url                                                   |
+| ----------------------- | ------- | ----------------------------------------------------- |
+| @typegoose/typegoose    | ^11.5.0 | https://www.npmjs.com/package/@typegoose/typegoose    |
+| @types/node             | ^20.6.2 | https://www.npmjs.com/package/@types/node             |
+| argon2                  | ^0.31.1 | https://www.npmjs.com/package/argon2                  |
+| cookie-parser           | ^1.4.6  | https://www.npmjs.com/package/cookie-parser           |
+| cors                    | ^2.8.5  | https://www.npmjs.com/package/cors                    |
+| dotenv                  | ^16.3.1 | https://www.npmjs.com/package/dotenv                  |
+| express                 | ^4.18.2 | https://www.npmjs.com/package/express                 |
+| express-async-errors    | ^3.1.1  | https://www.npmjs.com/package/express-async-errors    |
+| helmet                  | ^7.0.0  | https://www.npmjs.com/package/helmet                  |
+| http-status-codes       | ^2.2.0  | https://www.npmjs.com/package/http-status-codes       |
+| jsonwebtoken            | ^9.0.2  | https://www.npmjs.com/package/jsonwebtoken            |
+| mongoose                | ^7.5.2  | https://www.npmjs.com/package/mongoose                |
+| mongoose-slug-generator | ^1.0.4  | https://www.npmjs.com/package/mongoose-slug-generator |
+| pino                    | ^8.15.1 | https://www.npmjs.com/package/pino                    |
+| pino-pretty             | ^10.2.0 | https://www.npmjs.com/package/pino-pretty             |
+| semver                  | ^7.5.4  | https://www.npmjs.com/package/semver                  |
+| ts-node-dev             | ^2.0.0  | https://www.npmjs.com/package/ts-node-dev             |
+| typescript              | ^5.2.2  | https://www.npmjs.com/package/typescript              |
+| zod                     | ^3.22.2 | https://www.npmjs.com/package/zod                     |
+| zod-express-middleware  | ^1.4.0  | https://www.npmjs.com/package/zod-express-middleware  |
 
 ## Installation
 
